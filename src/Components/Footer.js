@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Footer = styled.footer`
   font-size: 50%;
   pointer-events: ${props => props.theme.interaction};
-  
+
   a:hover::after {
     pointer-events: none;
     animation: 1s linear infinite blinking;
@@ -24,6 +24,6 @@ export default () => (
       <a target="blank" rel="noopener" href="https://cedmax.com">cedmax</a>
     </p>
 
-    <p>* speaking of unnecessary, get offline. Like now.</p>
+    <p>* speaking of unnecessary, have you considered going offline?</p>
   </Footer>
 )
