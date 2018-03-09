@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 const Footer = styled.footer`
   font-size: 50%;
-
+  pointer-events: ${props => props.theme.interaction};
+  
   a:hover::after {
     pointer-events: none;
     animation: 1s linear infinite blinking;

@@ -8,7 +8,7 @@ import OfflineMain from '../Components/OfflineMain'
 
 const theme = {
   online: {
-    select: 'unset',
+    interaction: 'unset',
     bk: 'white',
     front: 'black',
     a: {
@@ -18,7 +18,7 @@ const theme = {
     },
   },
   offline: {
-    select: 'none',
+    interaction: 'none',
     bk: '#222',
     front: 'white',
     a: {
@@ -35,7 +35,7 @@ const BodyStyle = styled.div`
   padding: 0 1vw 1vw;
   position: relative;
   width: 100%;
-  user-select: ${props => props.theme.select};
+  user-select: ${props => props.theme.interaction};
   background: ${props => props.theme.bk};
   color: ${props => props.theme.front};
 
