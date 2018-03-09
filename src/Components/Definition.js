@@ -20,6 +20,6 @@ const Dl = styled.dl`
 export default () => (
   <Dl>
     <dt>Inutile</dt>
-    <dd>useless, unnecessary, pointless</dd>
+    <dd>useless, unnecessary<sup>*</sup>, pointless</dd>
   </Dl>
 )

@@ -18,7 +18,11 @@ const Footer = styled.footer`
 
 export default () => (
   <Footer>
-    Another bad example of design by{' '}
-    <a target="blank" rel="noopener" href="https://cedmax.com">cedmax</a>
+    <p>
+      Another bad example of design by{' '}
+      <a target="blank" rel="noopener" href="https://cedmax.com">cedmax</a>
+    </p>
+
+    <p>* speaking of unnecessary, get offline. Like now.</p>
   </Footer>
 )
