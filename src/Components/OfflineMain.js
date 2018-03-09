@@ -1,5 +1,11 @@
 import React, { Fragment, Component } from 'react'
 import styled from 'styled-components'
+import Fireworks from 'fireworks-react'
+
+const getWindowSize = () => ({
+  w: Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
+  h: Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
+})
 
 const Ball = styled.div`
   animation: moveX ${props => `${props.speed}.05s`} linear 0s infinite alternate, moveY ${props => `${props.speed}.4s`} linear 0s infinite alternate;
@@ -17,6 +23,17 @@ const Score = styled.div`
   right: 10px;
   font-size: 200%;
   color: red;
+`
+
+const Center = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export default class Offline extends Component {
@@ -76,12 +93,17 @@ export default class Offline extends Component {
           </Fragment>
         ) : (
           <Fragment>
-            <p>
-              { next ? <input onClick={this.speedUp} type="button" value="NEXT" /> : 'YOU WON!'}
-            </p>
+            {
+              next
+                ? <p><input onClick={this.speedUp} type="button" value="NEXT" /></p>
+                : (
+                  <Center>
+                    <Fireworks width={getWindowSize().w} height={getWindowSize().h} />
+                  </Center>
+                )
+            }
           </Fragment>
-        )
-        }
+        )}
       </Fragment>
     )
   }
