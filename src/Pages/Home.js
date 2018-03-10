@@ -32,7 +32,7 @@ const theme = {
 const BodyStyle = styled.div`
   background: red;
   min-height: 100%;
-  padding: 0 1vw 1vw;
+  padding: 0 2vw 2vw;
   position: relative;
   width: 100%;
   user-select: ${props => props.theme.interaction};
