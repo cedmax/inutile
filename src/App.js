@@ -18,11 +18,11 @@ injectGlobal`
   }
 
   @keyframes moveX {
-    from { left: 0; } to { left: calc(100vw - 5vw); }
+    from { left: 0 } to { left: var(--max-x); }
   }
 
   @keyframes moveY {
-    from { top: 0; } to { top: calc(100vh - 5vw); }
+    from { top: 0; } to { top: var(--max-y); }
   }
 
   * {
