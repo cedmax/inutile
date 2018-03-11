@@ -1,0 +1,23 @@
+{
+  "dir" : "ltr",
+  "lang" : "en",
+  "name" : "Inutile by dsgn",
+  "scope" : "/",
+  "display" : "standalone",
+  "start_url" : "https://inutile.co/",
+  "short_name" : "inutile",
+  "theme_color" : "#000000",
+  "description" : "Useless, unnecessary, pointless",
+  "orientation" : "any",
+  "background_color" : "#ffffff",
+  "icons" : [
+      {
+          "src": "https://inutile.co/favicon-32x32.png",
+          "sizes": "32x32"
+      },
+      {
+        "src": "https://inutile.co/favicon-16x16.png",
+        "sizes": "16x16"
+      }
+  ]
+}

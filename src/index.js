@@ -17,3 +17,10 @@ if (typeof document !== 'undefined') {
   // Render!
   render(App)
 }
+
+if (typeof window !== 'undefined') {
+  if (navigator.serviceWorker && !navigator.serviceWorker.controller) {
+    navigator.serviceWorker.register('/service-worker.js')
+  }
+}
+
