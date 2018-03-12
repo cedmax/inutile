@@ -1,10 +1,17 @@
 import React, { Fragment } from 'react'
-import { Offline, Online } from 'react-detect-offline'
 import styled, { ThemeProvider } from 'styled-components'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import OnlineMain from '../Components/OnlineMain'
 import OfflineMain from '../Components/OfflineMain'
+
+let Offline
+let Online
+if (typeof window !== 'undefined') {
+  const reactDetect = require('react-detect-offline')
+  Offline = reactDetect.Offline
+  Online = reactDetect.Online
+}
 
 const theme = {
   online: {
@@ -63,8 +70,10 @@ const HomePage = ({ theme, offline }) => (
 )
 
 export default () => (
-  <Fragment>
-    <Online><HomePage theme={theme.online} offline={false} /></Online>
-    <Offline><HomePage theme={theme.offline} offline /></Offline>
-  </Fragment>
+  (typeof window !== 'undefined') ? (
+    <Fragment>
+      <Online><HomePage theme={theme.online} offline={false} /></Online>
+      <Offline><HomePage theme={theme.offline} offline /></Offline>
+    </Fragment>
+  ) : <HomePage theme={theme.online} offline={false} />
 )
