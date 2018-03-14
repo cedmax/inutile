@@ -62,7 +62,12 @@ export default class Offline extends Component {
   }
 
   componentWillMount () {
+    document.body.classList.add('offline')
     this.setState({ ...defaultState })
+  }
+
+  componentWillUnmount () {
+    document.body.classList.remove('offline')
   }
 
   cheat () {

@@ -1,6 +1,6 @@
 /* global skipWaiting clients,  */
-const cacheName = 'files'
-const offlinePage = '/index.html'
+const cacheName = 'assets'
+const offlinePage = '/offline.html'
 
 addEventListener('install', installEvent => {
   skipWaiting()

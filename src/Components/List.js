@@ -4,9 +4,13 @@ import styled from 'styled-components'
 const List = styled.ul`
   list-style: none;
 
+  li a {
+    padding-right: 2.5em;
+  }
+
   li a::before {
     content: "";
-    border-color: transparent ${props => props.theme.a.default};
+    border-color: transparent ${({ theme }) => theme.a.default};
     border-style: solid;
     border-width: 0.35em 0 0.35em 0.45em;
     height: 0;
@@ -22,7 +26,7 @@ const List = styled.ul`
     position: absolute;
     margin-left: .5rem;
     content: 'NEW!';
-    color: ${props => props.theme.a.active};
+    color: ${({ theme }) => theme.a.active};
     display: inline;
     text-decoration: underline;
   }
@@ -47,7 +51,7 @@ const List = styled.ul`
   }
   
   li a:visited::before {
-    border-color: ${props => props.theme.a.visited};
+    border-color: ${({ theme }) => theme.a.visited};
   }
   
   li a:active::before {

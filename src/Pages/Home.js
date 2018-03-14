@@ -14,15 +14,13 @@ if (typeof window !== 'undefined') {
 }
 
 const theme = {
-  online: {
-    interaction: 'unset',
-    bk: 'white',
-    front: 'black',
-    a: {
-      default: '#0000EE',
-      visited: '#551A8B',
-      active: '#ff0000',
-    },
+  interaction: 'unset',
+  bk: 'white',
+  front: 'black',
+  a: {
+    default: '#0000EE',
+    visited: '#551A8B',
+    active: '#ff0000',
   },
   offline: {
     interaction: 'none',
@@ -36,30 +34,38 @@ const theme = {
   },
 }
 
+const themableProps = theme => `
+  user-select: ${theme.interaction};
+  background: ${theme.bk};
+  color: ${theme.front};
+
+  a {
+    color: ${theme.a.default};
+
+    &:visited {
+      color: ${theme.a.visited};
+    }
+
+    &:active {
+      color: ${theme.a.active};
+    }
+  }
+`
+
 const BodyStyle = styled.div`
   background: red;
   min-height: 100%;
   padding: 0 2vw 2vw;
   position: relative;
   width: 100%;
-  user-select: ${props => props.theme.interaction};
-  background: ${props => props.theme.bk};
-  color: ${props => props.theme.front};
+  ${themableProps(theme)}
 
-  a {
-    color: ${props => props.theme.a.default};
-
-    &:visited {
-      color: ${props => props.theme.a.visited};
-    }
-
-    &:active {
-      color: ${props => props.theme.a.active};
-    }
+  .offline & {
+    ${themableProps(theme.offline)}
   }
 `
 
-const HomePage = ({ theme, offline }) => (
+const HomePage = ({ offline }) => (
   <ThemeProvider theme={theme}>
     <BodyStyle>
       <Header />
@@ -72,8 +78,8 @@ const HomePage = ({ theme, offline }) => (
 export default () => (
   (typeof window !== 'undefined') ? (
     <Fragment>
-      <Online><HomePage theme={theme.online} offline={false} /></Online>
-      <Offline><HomePage theme={theme.offline} offline /></Offline>
+      <Online><HomePage /></Online>
+      <Offline><HomePage offline /></Offline>
     </Fragment>
-  ) : <HomePage theme={theme.online} offline={false} />
+  ) : <HomePage />
 )

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
-    "build": "react-static build",
+    "build": "react-static build && cp dist/index.html dist/offline.html && rexreplace '<body>' '<body class=\"offline\">' dist/offline.html",
     "serve": "serve dist -p 3000"
   },
   "dependencies": {
@@ -23,6 +23,7 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.5.1",
     "eslint-config-react-tools": "1.1.2",
+    "rexreplace": "^3.0.1",
     "serve": "^6.5.3"
   }
 }

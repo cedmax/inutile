@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Footer = styled.footer`
   font-size: 50%;
-  pointer-events: ${props => props.theme.interaction};
+  pointer-events: ${({ theme }) => theme.interaction};
 
   a:hover::after {
     pointer-events: none;
@@ -11,9 +11,17 @@ const Footer = styled.footer`
     position: absolute;
     margin-left: .5rem;
     content: '<= the webmaster';
-    color: ${props => props.theme.a.active};
+    color: ${({ theme }) => theme.a.active};
     display: inline;
     text-decoration: underline;
+  }
+
+  .offline & {
+    pointer-events: ${({ theme }) => theme.offline.interaction};
+
+    a:hover::after {
+      color: ${({ theme }) => theme.offline.a.active};
+    }
   }
 `
 
