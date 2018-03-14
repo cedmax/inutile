@@ -2,16 +2,6 @@ import React, { Component } from 'react'
 import { ServerStyleSheet } from 'styled-components'
 
 export default {
-  getRoutes: () => [
-    {
-      path: '/',
-      component: 'src/Pages/Home',
-    },
-    {
-      is404: true,
-      component: 'src/Pages/404',
-    },
-  ],
   renderToHtml: (render, Comp, meta) => {
     const sheet = new ServerStyleSheet()
     const html = render(sheet.collectStyles(<Comp />))

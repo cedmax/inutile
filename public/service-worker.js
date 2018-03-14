@@ -22,20 +22,19 @@ addEventListener('fetch', fetchEvent => {
   fetchEvent.respondWith(async function respond () {
     const responseFromFetch = fetch(request)
 
-    fetchEvent.waitUntil(async function saveInCache () {
-      const responseCopy = (await responseFromFetch).clone()
-      const myCache = await caches.open(cacheName)
-      await myCache.put(request, responseCopy)
-    }())
-
     if (request.headers.get('Accept').includes('text/html')) {
       try {
         return await responseFromFetch
       } catch (error) {
-        const responseFromCache = await caches.match(request)
-        return responseFromCache || caches.match(offlinePage)
+        return caches.match(offlinePage)
       }
     } else {
+      fetchEvent.waitUntil(async function saveInCache () {
+        const responseCopy = (await responseFromFetch).clone()
+        const myCache = await caches.open(cacheName)
+        await myCache.put(request, responseCopy)
+      }())
+
       const responseFromCache = await caches.match(request)
       return responseFromCache || responseFromFetch
     }
