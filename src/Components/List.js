@@ -70,6 +70,7 @@ export default () => (
     <li><a target="blank" rel="noopener" href="https://swear.at">Swearing gift cards</a></li>
     <li><a target="blank" rel="noopener" href="https://graphtv.dsgn.it">A stolen idea: TV Shows ratings graphs</a></li>
     <li><a target="blank" rel="noopener" href="https://bearded.dsgn.it">How is my beard right now</a></li>
+    <li><a target="blank" rel="noopener" href="https://governi.dsgn.it">Italian prime ministers by region</a></li>
     <li><a target="blank" rel="noopener" href="https://baas.dsgn.it">Blasphemy as a service</a></li>
     <li><a target="blank" rel="noopener" href="https://swear.at/me">My better half swearing trends</a></li>
     <li><a target="blank" rel="noopener" href="https://memento-mori.dsgn.it">Get reminders about your future death</a></li>
