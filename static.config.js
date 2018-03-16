@@ -21,6 +21,7 @@ export default {
             <meta name="author" content="cedmax" />
             <link rel="manifest" href="/manifest.json" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name="theme-color" content="#000" />
             <link href="inutile-32x32.png" rel="icon" sizes="32x32" type="image/png" />
             <link href="inutile-16x16.png" rel="icon" sizes="16x16" type="image/png" />
             {renderMeta.styleTags}
