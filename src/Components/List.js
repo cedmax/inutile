@@ -66,6 +66,8 @@ const List = styled.ul`
 
 export default () => (
   <List>
+    <li><a target="blank" rel="noopener" href="https://swear.at/everyone">A language course for swearing nomads</a></li>
+    <li><a target="blank" rel="noopener" href="https://werunads.dsgn.it">Senator, we run ads</a></li>
     <li><a target="blank" rel="noopener" href="https://safe.dsgn.it">Facebook marked safe generator</a></li>
     <li><a target="blank" rel="noopener" href="https://swear.at">Swearing gift cards</a></li>
     <li><a target="blank" rel="noopener" href="https://graphtv.dsgn.it">A stolen idea: TV Shows ratings graphs</a></li>
