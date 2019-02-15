@@ -68,11 +68,13 @@ export default () => (
   <List>
     <li><a target="blank" rel="noopener" href="https://swear.at/everyone">A language course for swearing nomads</a></li>
     <li><a target="blank" rel="noopener" href="https://werunads.dsgn.it">Senator, we run ads</a></li>
+    <li><a target="blank" rel="noopener" href="https://colours.dsgn.it">List of named colours</a></li>
     <li><a target="blank" rel="noopener" href="https://safe.dsgn.it">Facebook marked safe generator</a></li>
     <li><a target="blank" rel="noopener" href="https://swear.at">Swearing gift cards</a></li>
     <li><a target="blank" rel="noopener" href="https://graphtv.dsgn.it">A stolen idea: TV Shows ratings graphs</a></li>
     <li><a target="blank" rel="noopener" href="https://bearded.dsgn.it">How is my beard right now</a></li>
     <li><a target="blank" rel="noopener" href="https://governi.dsgn.it">Italian prime ministers by region</a></li>
+    <li><a target="blank" rel="noopener" href="https://flags.dsgn.it">Flags of the world</a></li>
     <li><a target="blank" rel="noopener" href="https://baas.dsgn.it">Blasphemy as a service</a></li>
     <li><a target="blank" rel="noopener" href="https://swear.at/me">My better half swearing trends</a></li>
     <li><a target="blank" rel="noopener" href="https://memento-mori.dsgn.it">Get reminders about your future death</a></li>
