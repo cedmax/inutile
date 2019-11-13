@@ -74,10 +74,14 @@ export default () => (
     <li><a target="blank" rel="noopener" href="https://graphtv.dsgn.it">A stolen idea: TV Shows ratings graphs</a></li>
     <li><a target="blank" rel="noopener" href="https://bearded.dsgn.it">How is my beard right now</a></li>
     <li><a target="blank" rel="noopener" href="https://governi.dsgn.it">Italian prime ministers by region</a></li>
+    <li><a target="blank" rel="noopener" href="https://wikimap.dsgn.it/">A people map of Italy</a></li>
+    <li><a target="blank" rel="noopener" href="https://24songs.dsgn.it">A musical advent calendar that has nothing Christmassy to it</a></li>
     <li><a target="blank" rel="noopener" href="https://flags.dsgn.it">Flags of the world</a></li>
+    <li><a target="blank" rel="noopener" href="https://boris-soundboard.dsgn.it/">A soundboard from the Italian tv show Boris</a></li>
     <li><a target="blank" rel="noopener" href="https://baas.dsgn.it">Blasphemy as a service</a></li>
     <li><a target="blank" rel="noopener" href="https://swear.at/me">My better half swearing trends</a></li>
     <li><a target="blank" rel="noopener" href="https://memento-mori.dsgn.it">Get reminders about your future death</a></li>
+    <li><a target="blank" rel="noopener" href="https://5whys.dsgn.it">A tool to complete a 5whys analysis – this is actually useful</a></li>
     <li><a target="blank" rel="noopener" href="https://smartcookies.dsgn.it">Pseudo-sciencific intelligence traits, according to the internet</a></li>
     <li><a target="blank" rel="noopener" href="https://suchify.dsgn.it">Apply the face of my former team lead on other people's pics</a></li>
     <li><a target="blank" rel="noopener" href="https://trilogies.dsgn.it">Movies trilogies quality charts</a></li>
