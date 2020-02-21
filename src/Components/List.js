@@ -73,6 +73,7 @@ export default () => (
     <li><a target="blank" rel="noopener" href="https://swear.at">Swearing gift cards</a></li>
     <li><a target="blank" rel="noopener" href="https://graphtv.dsgn.it">A stolen idea: TV Shows ratings graphs</a></li>
     <li><a target="blank" rel="noopener" href="https://bearded.dsgn.it">How is my beard right now</a></li>
+    <li><a target="blank" rel="noopener" href="https://indiemap.dsgn.it">A list of indie-cities on a map</a></li>
     <li><a target="blank" rel="noopener" href="https://governi.dsgn.it">Italian prime ministers by region</a></li>
     <li><a target="blank" rel="noopener" href="https://wikimap.dsgn.it/">A people map of Italy</a></li>
     <li><a target="blank" rel="noopener" href="https://24songs.dsgn.it">A musical advent calendar that has nothing Christmassy to it</a></li>
