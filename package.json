@@ -24,6 +24,6 @@
     "babel-plugin-styled-components": "^1.5.1",
     "eslint-config-react-tools": "1.1.2",
     "rexreplace": "^3.0.1",
-    "serve": "^6.5.3"
+    "serve": "^10.1.2"
   }
 }
