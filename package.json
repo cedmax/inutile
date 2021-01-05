@@ -10,7 +10,7 @@
     "serve": "serve dist -p 3000"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "fireworks-react": "^1.0.12",
     "react": "^16.2.0",
     "react-detect-offline": "^2.0.0",
