@@ -70,13 +70,17 @@ export default () => (
     <li><a target="blank" rel="noopener" href="https://werunads.dsgn.it">Senator, we run ads</a></li>
     <li><a target="blank" rel="noopener" href="https://colours.dsgn.it">List of named colours</a></li>
     <li><a target="blank" rel="noopener" href="https://safe.dsgn.it">Facebook marked safe generator</a></li>
+    <li><a target="blank" rel="noopener" href="https://imgthreads.com">A tool to build visual narratives through image in, guess what, threads</a></li>
     <li><a target="blank" rel="noopener" href="https://swear.at">Swearing gift cards</a></li>
     <li><a target="blank" rel="noopener" href="https://graphtv.dsgn.it">A stolen idea: TV Shows ratings graphs</a></li>
     <li><a target="blank" rel="noopener" href="https://bearded.dsgn.it">How is my beard right now</a></li>
     <li><a target="blank" rel="noopener" href="https://indiemap.dsgn.it">A list of indie-cities on a map</a></li>
+    <li><a target="blank" rel="noopener" href="https://oyster.dsgn.it/">Did you ever wonder in what zone you were travelling to, in London?</a></li>
+    <li><a target="blank" rel="noopener" href="https://songworm.dsgn.it">A songworm is a song that you hear once and it replays itself over and over in your head</a></li>
     <li><a target="blank" rel="noopener" href="https://governi.dsgn.it">Italian prime ministers by region</a></li>
     <li><a target="blank" rel="noopener" href="https://wikimap.dsgn.it/">A people map of Italy</a></li>
     <li><a target="blank" rel="noopener" href="https://24songs.dsgn.it">A musical advent calendar that has nothing Christmassy to it</a></li>
+    <li><a target="blank" rel="noopener" href="https://quilt.dsgn.it">A tool to plan for a quilt</a></li>
     <li><a target="blank" rel="noopener" href="https://flags.dsgn.it">Flags of the world</a></li>
     <li><a target="blank" rel="noopener" href="https://boris-soundboard.dsgn.it/">A soundboard from the Italian tv show Boris</a></li>
     <li><a target="blank" rel="noopener" href="https://baas.dsgn.it">Blasphemy as a service</a></li>
