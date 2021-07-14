@@ -5,6 +5,10 @@ const Footer = styled.footer`
   font-size: 50%;
   pointer-events: ${({ theme }) => theme.interaction};
 
+  a, a:visited, a:hover {
+    color: ${({ theme }) => theme.front}!important;
+  }
+
   a:hover::after {
     pointer-events: none;
     animation: 1s linear infinite blinking;
@@ -28,10 +32,8 @@ const Footer = styled.footer`
 export default () => (
   <Footer>
     <p>
-      Another bad example of design by{' '}
+      A lot of examples of bad design by {' '}
       <a target="blank" rel="noopener" href="https://cedmax.com">cedmax</a>
     </p>
-
-    <p>* speaking of unnecessary, have you considered going offline?</p>
   </Footer>
 )
