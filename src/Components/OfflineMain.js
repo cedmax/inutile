@@ -119,9 +119,9 @@ export default class Offline extends Component {
                 animationDelay: `-${Math.floor(Math.random() * 100)}s`,
               }}
               onClick={this.gotIt} speed={cheat ? 100 : speed} />
-            <p>You're now offline</p>
-            <p>There isn't much point in linking other web resources</p>
-            <p>Play a game instead: catch the ball!</p>
+            <p>It looks like you are offline</p>
+            <p>Since links won't work, why not playing a game instead?</p>
+            <p>Try to catch the ball!</p>
           </Fragment>
         ) : (
           <Fragment>

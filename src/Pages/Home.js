@@ -15,18 +15,20 @@ if (typeof window !== 'undefined') {
 
 const theme = {
   interaction: 'unset',
-  bk: 'white',
-  front: 'black',
+  bk: 'transparent',
+  front: '#6EFCBB',
   a: {
+    bk: '#4AB18E',
     default: '#0000EE',
     visited: '#551A8B',
-    active: '#ff0000',
+    active: '#f54171',
   },
   offline: {
     interaction: 'none',
     bk: '#222',
     front: 'white',
     a: {
+      bk: '#000',
       default: '#ee7700',
       visited: '#8b711a',
       active: '#00FF00',

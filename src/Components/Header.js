@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Definition from '../Components/Definition'
 
 const Title = styled.h1`
+  margin: .8rem 0;
   span {
     font-size: 50%
   }

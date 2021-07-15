@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 const Dl = styled.dl`
   font-family: Courier, monospace;
-  
+  font-size: 80%;
+
   dd::before {
     background: #FFFFFF;
     border-left: .5rem solid #009900;
@@ -20,6 +21,6 @@ const Dl = styled.dl`
 export default () => (
   <Dl>
     <dt>Inutile</dt>
-    <dd>useless, unnecessary<sup>*</sup>, pointless</dd>
+    <dd>useless, unnecessary, pointless</dd>
   </Dl>
 )
