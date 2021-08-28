@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import data from '../projects'
 
+
 const List = styled.ul`
   list-style: none;
+  padding-left: 0;
 
   li {
     margin-bottom: .5em;
@@ -83,14 +85,18 @@ const List = styled.ul`
   }
 `
 
+const Li = styled.li`
+  margin-left: ${() => Math.random()*1.1}em;
+`
+
 export default () => (
   <List>
     {data.map(prj => (
-      <li key={prj.homepage}>
+      <Li key={prj.homepage}>
         <a target="blank" rel="noopener" href={prj.homepage}>
           {prj.description}
         </a>
-      </li>
+      </Li>
     ))}
   </List>
 )
