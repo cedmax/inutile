@@ -1,3 +1,3 @@
 # Inutile.co
 
-[Inutile](https://inutile.co) is an unnecessary website.
+[Inutile](https://inutile.dsgn.it) is an unnecessary website.
